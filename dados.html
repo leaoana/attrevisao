@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Cadastro Realizado!</h1>
+    </header>
+    <form action="" id="formdados">
+        <label for="">Nome</label>
+        <input type="text" placeholder="Insira seu nome" id="nome" oninput="guardanome()" readonly>
+        <label for="">Email</label>
+        <input type="email" placeholder="Insira seu email" id="email" oninput="guardaemail()" readonly>
+        <label for="">Telefone</label>
+        <input type="text" placeholder="(31)99999-9999" id="telefone"  oninput=mascara_telefone() maxlength="14" readonly>
+        <label for="CPF">CPF</label>
+        <input type="text" placeholder="xxx.xxx.xxx-xx" id="cpf" oninput=mascara_cpf() maxlength="14" readonly>
+        <label for="">Senha</label>
+        <input type="password" placeholder="Insira sua senha" id="senha" oninput="guardasenha()" readonly>
+        <div id="modal-fade" class="hide"></div>
+    </form>
+</body>
+</html>
